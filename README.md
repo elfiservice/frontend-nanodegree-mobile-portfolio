@@ -13,5 +13,5 @@ You can do a Download of all source or just acess this link [HERE](https://elfis
  - I put some scripts JS at the end of the body tag
  - I optimized the images
  - I optimized horizontal scroll resize pizzas on the pizza.html page
- 
+ - I optimized the movement of the pizzas when It's scrolling on the screen. On the pizza.html page
 
