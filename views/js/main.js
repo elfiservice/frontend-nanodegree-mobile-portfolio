@@ -423,7 +423,7 @@ var resizePizzas = function(size) {
 
 
   // Iterates through pizza elements on the page and changes their widths
-  //on horizontal scroll to change the size 
+  //on horizontal scroll to change the size
   function changePizzaSizes(size) {
     switch(size) {
       case "1":
@@ -491,8 +491,9 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
+  var calcScrollTop = Math.sin(document.body.scrollTop / 1250);
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = (calcScrollTop + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
